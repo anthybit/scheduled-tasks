@@ -6,7 +6,7 @@
 # See the solution video in the 100 Days of Python Course for explainations.
 
 
-import datetime as dt
+import datetime
 import random
 import smtplib
 import os
@@ -15,7 +15,7 @@ import os
 MY_EMAIL = os.environ.get("MY_EMAIL")
 MY_PASSWORD = os.environ.get("MY_PASSWORD")
 MY_TARGET = os.environ.get("MY_TARGET")
-now = dt.datetime.now
+now = datetime.datetime.now
 day_of_week = now.weekday()
 
 with open("quotes.txt") as file:
