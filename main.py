@@ -15,7 +15,8 @@ import os
 MY_EMAIL = os.environ.get("MY_EMAIL")
 MY_PASSWORD = os.environ.get("MY_PASSWORD")
 MY_TARGET = os.environ.get("MY_TARGET")
-today = datetime.now()
+now = datetime.now
+day_of_week = now.weekday()
 
 with open("quotes.txt") as file:
     quotes = file.readlines()
